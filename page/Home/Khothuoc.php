@@ -3,29 +3,12 @@
 
 <head>
 	<title>Kho thuốc</title>
+	<link rel="stylesheet" href="../../assets/CSS/STYLE_GLOBAL.css">
 	<style type="text/css">
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			font-family: 'Roboto', sans-serif;
-		}
-
-		.row {
-			display: flex;
-			flex-direction: row;
-		}
-
-		.Khothuoc {
-		}
 
 		.inp {
 			height: 40px;
 			width: 300px;
-			margin-top: 15px;
 			font-size: 20px;
 			padding-left: 20px;
 			border-radius: 10px;
@@ -40,8 +23,7 @@
 
 		.table {
 			border-collapse: collapse;
-			margin-top: 60px;
-			margin-left: 100px;
+			margin-top: 20px;
 			font-size: 25px;
 		}
 
@@ -66,16 +48,20 @@
 		}
 
 		.themthuoc {
-			margin-top: 10px;
+			margin-top: 20px;
 			width: 200px;
 			height: 50px;
-			margin-left: 770px;
+			margin-left: 800px;
 			background-color: rgb(85, 149, 205);
 			border: none;
 			color: white;
 			font-size: 22px;
 			font-weight: bold;
 			border-radius: 10px;
+		}
+		.select:hover {
+			background: rgb(24, 205, 229);
+			cursor: pointer;
 		}
 
 
@@ -96,76 +82,78 @@
 			<?php include '../../component/Home/menuLeft.php' ?>
 		</div>
 
-		<div>
+		<div style="height: 100vh;">
 			<div>
 				<?php include '../../component/Home/header.php' ?>
 			</div>
-			<div>
-				<h1 class="name" style="font-size: 40px; color: #000; text-align: center;">Kho thuốc</h1>
-				<div style="margin-left: 550px;">
-					<input class="inp" type="text" placeholder="Nhập thuốc tìm kiếm..." name="medicine"><br>
-					<a href="#"><button class="bttfind"><img src="../../assets/anh/lup.png" width=40px height=40px></button></a>
+			<div >
+				<h1 class="txt-center" style="font-size: 40px; color: #000;">Kho thuốc</h1>
+				<div class="item-center">
+					<div class="row" style="margin-top: 20px;">
+						<input class="inp" type="text" placeholder="Nhập thuốc tìm kiếm..." name="medicine"><br>
+						<a href="#"><button class="bttfind"><img src="../../assets/anh/lup.png" width=40px height=40px></button></a>
+					</div>
+					<table class="table">
+						<tr class="col0">
+							<th class="tt" style="width: 250px; background: rgb(92,152,245);">Tên thuốc</th>
+							<th class="tt" style="width: 200px; background: rgb(24,205,229);">Dạng</th>
+							<th class="tt" style="width: 150px; background: rgb(92,152,245);">Số lượng</th>
+							<th class="tt" style="width: 150px; background: rgb(24,205,229);">Giá</th>
+							<th class="tt" style="width: 100px; background: rgb(92,152,245);">Chi tiết</th>
+						</tr>
+						<tr class="col1">
+							<th class="tt">Tên thuốc</th>
+							<th class="tt">Dạng</th>
+							<th class="tt">Số lượng</th>
+							<th class="tt">Giá</th>
+							<th class="tt"><a href="#"><button class="btnChiTiet select">Xem</button></a></th>
+						</tr>
+						<tr class="col2">
+							<th class="tt">Tên thuốc</th>
+							<th class="tt">Dạng</th>
+							<th class="tt">Số lượng</th>
+							<th class="tt">Giá</th>
+							<th class="tt"><a href="#"><button class="btnChiTiet select">Xem</button></a></th>
+						</tr>
+						<tr class="col1">
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+						</tr>
+						<tr class="col2">
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+						<tr class="col1">
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+						</tr>
+						<tr class="col2">
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+						<tr class="col1">
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+							<th class="tt"></th>
+						</tr>
+					</table>
+
 				</div>
-				<table class="table">
-					<tr class="col0">
-						<th class="tt" style="width: 250px; background: rgb(92,152,245);">Tên thuốc</th>
-						<th class="tt" style="width: 200px; background: rgb(24,205,229);">Dạng</th>
-						<th class="tt" style="width: 150px; background: rgb(92,152,245);">Số lượng</th>
-						<th class="tt" style="width: 150px; background: rgb(24,205,229);">Giá</th>
-						<th class="tt" style="width: 100px; background: rgb(92,152,245);">Chi tiết</th>
-					</tr>
-					<tr class="col1">
-						<th class="tt">Tên thuốc</th>
-						<th class="tt">Dạng</th>
-						<th class="tt">Số lượng</th>
-						<th class="tt">Giá</th>
-						<th class="tt"><a href="#"><button class="btnChiTiet">Xem</button></a></th>
-					</tr>
-					<tr class="col2">
-						<th class="tt">Tên thuốc</th>
-						<th class="tt">Dạng</th>
-						<th class="tt">Số lượng</th>
-						<th class="tt">Giá</th>
-						<th class="tt"><a href="#"><button class="btnChiTiet">Xem</button></a></th>
-					</tr>
-					<tr class="col1">
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-					</tr>
-					<tr class="col2">
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-					<tr class="col1">
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-					</tr>
-					<tr class="col2">
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-					<tr class="col1">
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-						<th class="tt"></th>
-					</tr>
-				</table>
-				<a href="#"><button class="themthuoc">Thêm thuốc mới</button></a>
+				<a href="#"><button class="themthuoc select"> + Thêm thuốc mới</button></a>
 			</div>
 		</div>
 	</div>
 </body>
-
 </html>

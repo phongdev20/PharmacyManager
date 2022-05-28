@@ -21,3 +21,14 @@ body {
 .color-white {
     color: #fff;
 }
+
+.txt-center {
+    text-align: center;
+}
+
+.item-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
