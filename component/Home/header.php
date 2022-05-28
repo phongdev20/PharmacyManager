@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/CSS/STYLE_GLOBAL.css">
     <style>
         #header{
             background: rgb(54, 129, 243);
-            width: 100vw;
+            width: calc(100vw - 317px);
             height: 80px;
+            position: relative;
+            top: 0;
         }
         #header .logout{
-			margin-left: 900px;
 			font-size: 20px;
 			font-weight: bold;
             padding-top: 20px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: flex-end;
 		}
         #header .link-top {
             text-decoration: none;
