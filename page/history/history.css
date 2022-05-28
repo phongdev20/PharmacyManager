@@ -1,11 +1,42 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.main{
+  width: 1440px;
+  height: 1024px;
+  background: #FFFFFF;
 }
-*::before , ::after{
-  box-sizing: border-box;
+.main_left{
+  width: 331px;
+  height: 1024px;
+  background: #3681F3;
 }
-a {
-  text-decoration: none;
+.main_left-title{
+  height: 137px;
+  left: 0;
+  right: 0;
+  background: #FBFAF6;
+  border-bottom: 8px solid #3681F3 ;
+}
+.main_left-title h2{
+  padding: 26px 0 0 16px  ;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #3681F3;
+
+}
+
+.main_left_nav{
+  height: 891px;
+  background: #FBFAF6;
+}
+.main_left_nav ul li{
+  display: block;
+  padding-left:65px  ;
+  padding-top: 45px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+.main_right{
+
 }
