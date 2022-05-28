@@ -8,7 +8,7 @@
     <style>
         #header{
             background: rgb(54, 129, 243);
-            width: calc(100vw - 317px);
+            width: calc(100vw - 300px);
             height: 80px;
             position: relative;
             top: 0;

@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../../assets/CSS/STYLE_GLOBAL.css">
     <style>
         #menu {
-            height: 100vh;
+            min-height: 100vh;
             width: 300px;
             background-color: rgb(251, 250, 246);
             border-right: 3px solid rgb(54, 129, 243);
+            
         }
 
         #menu .box-name {
