@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/CSS/STYLE_GLOBAL.css">
+    <link rel="stylesheet" href="../../../assets/CSS/STYLE_GLOBAL.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <style>
         #header {
@@ -61,7 +61,7 @@
                 echo '
                 <div class="row user">
                     <a href=""><img src="http://localhost/PharmacyManager/assets/anh/user.png" alt=""></a>
-                    <p class="logout"><a class="link-top" href="http://localhost/PharmacyManager/page/Login/index.php">Đăng xuất</a></p>
+                    <p class="logout"><a class="link-top" href="http://localhost/PharmacyManager/ADMIN/Login/index.php">Đăng xuất</a></p>
                 </div> 
                 ';
             }
