@@ -25,11 +25,11 @@
       <table class="table">
 						<thead>
 							<tr class="col0">
-									<th>Mã Hóa Đơn</th>
-									<th>Tên khách hàng</th>
-									<th>Mã nhân Viên</th>
-									<th>ngày bán hàng</th>
-									<th>trạng thái thanh toán</th>
+									<th>ID</th>
+									<th>khách hàng</th>
+									<th>nhân Viên</th>
+									<th>ngày bán</th>
+									<th>trạng thái</th>
 									<th>Chi tiết</th>
 							</tr>
 						</thead>
@@ -47,7 +47,7 @@
 											<td>'.$row['Ma_NV'].'</td>
 											<td >'.$row['Ngay_Ban_Hang'].'</td>
 											<td >'.$row['Trang_Thai_Thanh_Toan'].'</td>
-											<td ><a href="#"><button class="btnChiTiet select">Xem</button></a></td>
+											<td ><a href="detailed_history.php"><button class="btnChiTiet select">Xem</button></a></td>
 										</tr>
 										';
 									}

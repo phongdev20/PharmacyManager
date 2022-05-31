@@ -26,20 +26,23 @@
         <button> <a href="#">trở về</a></button>
       </div>
       <table class="table">
-						<tr class="col0">
-							<th>Date</th>
+					<thead>
+					<tr class="col0">
 							<th>tên khách hàng</th>
               <th>tên thuốc</th>
 							<th >số lượng</th>
               <th>giá cả</th>
 						</tr>
-						<tr class="col1">
+					</thead>
+					<tbody>
+					<tr class="col1">
 							<td>13/03/2022</td>
 							<td>nguyễn văn A</td>
 							<td>vitamin A</td>
 							<td>5</td>
 							<td>500 <span>VND</span></td>
 						</tr>
+					</tbody>
 			</table>
       
       
