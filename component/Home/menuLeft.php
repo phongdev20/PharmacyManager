@@ -28,7 +28,7 @@
             font-size: 25px;
         }
 
-        #menu .box-item:hover{
+        #menu .box-item:hover {
             background: rgb(54, 129, 243);
             border: 1px solid #000;
         }
@@ -50,11 +50,28 @@
 
 <body>
     <div id="menu">
-        <div class="box-name">
-            <h1 class="name">Xin chào<br>[name]</h1>
-        </div>
+        <?php
+        if (session_id() === '') {
+            session_start();
+        }
+        $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
+        $username = $_SESSION['username'];
+        $password = $_SESSION['password'];
+
+        $sql = "SELECT * FROM `admin` WHERE TaiKhoan = '$username' && MatKhau = '$password'";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo '
+                <div class="box-name">
+                    <h1 class="name">Xin chào<br>'.$row['HoTen'].'</h1>
+                </div>';
+            }
+        }
+        $conn->close();
+        ?>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="Khothuoc.php">Kho thuốc</a></h1>
+            <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/page/Home/Khothuoc.php">Kho thuốc</a></h1>
         </div>
         <div class="box-item">
             <h1 class="itemmenu"><a class="link" href="../../page/history/history.php">Lịch sử bán</a></h1>
