@@ -57,7 +57,7 @@
             <h1 class="itemmenu"><a class="link" href="Khothuoc.php">Kho thuốc</a></h1>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="LichSuBan.php">Lịch sử bán</a></h1>
+            <h1 class="itemmenu"><a class="link" href="../../page/history/history.php">Lịch sử bán</a></h1>
         </div>
         <div class="box-item">
             <h1 class="itemmenu"><a class="link" href="ThongKeNgay.php">Thống kê ngày</a></h1>

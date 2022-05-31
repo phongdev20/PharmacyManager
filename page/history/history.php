@@ -23,41 +23,40 @@
         <h3>lịch sử thanh toán</h3>
       </div>
       <table class="table">
-						<tr class="col0">
-							<th>Tên thuốc</th>
-							<th  >Dạng</th>
-							<th >Số lượng</th>
-							<th c>Giá</th>
-							<th>Chi tiết</th>
-						</tr>
-						<tr class="col1">
-							<td>Tên thuốc</td>
-							<td >Dạng</td>
-							<td>Số lượng</td>
-							<td >Giá</td>
-							<td ><a href="#"><button class="btnChiTiet select">Xem</button></a></td>
-						</tr>
-						<tr class="col1">
-							<td>Tên thuốc</td>
-							<td >Dạng</td>
-							<td>Số lượng</td>
-							<td >Giá</td>
-							<td ><a href="#"><button class="btnChiTiet select">Xem</button></a></td>
-						</tr>
-						<tr class="col1">
-							<td>Tên thuốc</td>
-							<td >Dạng</td>
-							<td>Số lượng</td>
-							<td >Giá</td>
-							<td ><a href="#"><button class="btnChiTiet select">Xem</button></a></td>
-						</tr>
-						<tr class="col1">
-							<td>Tên thuốc</td>
-							<td >Dạng</td>
-							<td>Số lượng</td>
-							<td >Giá</td>
-							<td ><a href="#"><button class="btnChiTiet select">Xem</button></a></td>
-						</tr>
+						<thead>
+							<tr class="col0">
+									<th>Mã Hóa Đơn</th>
+									<th>Tên khách hàng</th>
+									<th>Mã nhân Viên</th>
+									<th>ngày bán hàng</th>
+									<th>trạng thái thanh toán</th>
+									<th>Chi tiết</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php
+								$conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
+								$sql = "SELECT * FROM `hoa_don`";
+								$result = $conn->query($sql);
+								if($result->num_rows > 0){
+									while ($row = $result->fetch_assoc()){
+										echo'
+										<tr class="col1">
+											<td>'.$row['Ma_Hoa_Don'].'</td>
+											<td >'.$row['Ten_KH'].'</td>
+											<td>'.$row['Ma_NV'].'</td>
+											<td >'.$row['Ngay_Ban_Hang'].'</td>
+											<td >'.$row['Trang_Thai_Thanh_Toan'].'</td>
+											<td ><a href="#"><button class="btnChiTiet select">Xem</button></a></td>
+										</tr>
+										';
+									}
+								}
+								$conn->close();
+							?>
+
+								
+						</tbody>
 						
 						
 					</table>
