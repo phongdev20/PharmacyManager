@@ -3,7 +3,7 @@
 
 <head>
 	<title>Kho thuốc</title>
-	<link rel="stylesheet" href="../../assets/CSS/STYLE_GLOBAL.css">
+	<link rel="stylesheet" href="../../../assets/CSS/STYLE_GLOBAL.css">
 	<style type="text/css">
 		.inp {
 			height: 40px;
@@ -95,7 +95,7 @@
 					<div class="row">
 						<div class="row" style="margin-top: 20px; margin-right: 40px;">
 							<input class="inp" type="text" placeholder="Nhập thuốc tìm kiếm..." name="medicine"><br>
-							<a href="#"><button class="bttfind"><img src="../../assets/anh/lup.png" width=40px height=40px></button></a>
+							<a href="#"><button class="bttfind"><img src="../../../assets/anh/lup.png" width=40px height=40px></button></a>
 						</div>
 						<a href="#"><button class="themthuoc select"> + Thêm thuốc mới</button></a>
 					</div>
@@ -119,7 +119,7 @@
 									<th class="tt txt-left">' . $row['Ten_Loai_MH'] . '</th>
 									<th class="tt txt-left">' . $row['So_Luong'] . '</th>
 									<th class="tt txt-left">' . $row['Gia'] . ' VNĐ</th>
-									<th class="tt"><a href="http://localhost/PharmacyManager/page/Home/ChiTiet.php/?Ma_SP='.$row['Ma_SP'].'"><button class="btnChiTiet select">Xem</button></a></th>
+									<th class="tt"><a href="http://localhost/PharmacyManager/ADMIN/page/Home/ChiTiet.php/?Ma_SP='.$row['Ma_SP'].'"><button class="btnChiTiet select">Xem</button></a></th>
 								</tr>
 								';
 							}
