@@ -12,6 +12,11 @@
             width: 300px;
             background-color: rgb(251, 250, 246);
             border-right: 3px solid rgb(54, 129, 243);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            min-height: 100vh;
         }
 
         #menu .box-name {
@@ -27,12 +32,22 @@
             font-size: 25px;
         }
 
+        #menu .box-item {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
         #menu .box-item:hover {
             background: rgb(54, 129, 243);
-            border: 1px solid #000;
+            border: 1px solid #fff;
+        }
+        .selected {
+            background: rgb(54, 129, 243);
+            border: 1px solid #fff;
         }
 
-        #menu .itemmenu {
+        #menu .link {
+            text-decoration: none;
+            color: black;
             font-size: 24px;
             text-align: left;
             padding-left: 20px;
@@ -40,9 +55,8 @@
             padding-bottom: 15px;
         }
 
-        #menu .link {
-            text-decoration: none;
-            color: black;
+        #menu .link:hover{
+            color: #fff;
         }
     </style>
 </head>
@@ -70,25 +84,28 @@
         $conn->close();
         ?>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/ADMIN/page/Home/Khothuoc.php">Kho thuốc</a></h1>
+            <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/Home/Khothuoc.php">Kho thuốc</a>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="LichSuBan.php">Lịch sử bán</a></h1>
+            <a class="link" href="LichSuBan.php">Nhà cung cấp</a>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="ThongKeNgay.php">Thống kê ngày</a></h1>
+            <a class="link" href="ThongKeNgay.php">Nhân viên</a>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="ThongKeThang.php">Thống kê tháng</a></h1>
+            <a class="link" href="ThongKeThang.php">Thống kê</a>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="LichSuNhapKho.php">Lịch sử nhập kho</a></h1>
+            <a class="link" href="LichSuNhapKho.php">Hóa đơn nhập</a>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="HoSoCaNhan.php">Hồ sơ cá nhân</a></h1>
+            <a class="link" href="HoSoCaNhan.php">Hóa đơn bán</a>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="ChamSocHeThong.php">Chăm sóc hệ thống</a></h1>
+            <a class="link" href="ChamSocHeThong.php">Hồ sơ cá nhân</a>
+        </div>
+        <div class="box-item">
+            <a class="link" href="ChamSocHeThong.php">Chăm sóc hệ thống</a>
         </div>
     </div>
 </body>
