@@ -14,6 +14,7 @@
 		</div>
 
 		<div class="main_right">
+<<<<<<< Updated upstream
     <div style="min-height: 100vh;">
 			<div >
 				<?php include '../../component/Home/header.php' ?>
@@ -51,6 +52,19 @@
 		</div>
     
    
+=======
+      <div style="min-height: 100vh;">
+        <div >
+          <?php include '../../component/Home/header.php' ?>
+        </div>
+        <div class="main_right-back">
+          <img src="../../assets/anh/back.png" alt="back">
+          <button>trở về</button>
+        </div>
+        
+        </div> 
+    </div>
+>>>>>>> Stashed changes
 
 	</div>
 </body>
