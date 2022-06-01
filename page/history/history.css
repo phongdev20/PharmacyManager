@@ -144,29 +144,6 @@
   border-radius: 5px;
 }
 
-<<<<<<< Updated upstream
-/* detail history */
-.backs{
-  width: 100%;
-  margin: 30px 45px;
-}
-.backs button {
-  height: 40px;
-  width: 80px;
-  background: #0859a4;
-  border-radius: 10px;
-  align-items: center;
-  
-}
-.backs button a{
-  text-decoration: none;
-  color: #fdfcff;
-  font-size: 20px;
-}
-.backs button:hover{
-  background-color: rgb(238, 95, 7);
-}
-=======
 /* detailled_history */
 .main_right-back{
   margin-top: 15px;
@@ -179,4 +156,3 @@
   width: 60px;
   height: 40px;
 }
->>>>>>> Stashed changes
