@@ -12,6 +12,7 @@
             width: 300px;
             background-color: rgb(251, 250, 246);
             border-right: 3px solid rgb(54, 129, 243);
+            
         }
 
         #menu .box-name {
@@ -73,7 +74,7 @@
             <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/ADMIN/Home/Khothuoc.php">Kho thuốc</a></h1>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="LichSuBan.php">Lịch sử bán</a></h1>
+            <h1 class="itemmenu"><a class="link" href="../../page/history/history.php">Lịch sử bán</a></h1>
         </div>
         <div class="box-item">
             <h1 class="itemmenu"><a class="link" href="ThongKeNgay.php">Thống kê ngày</a></h1>
