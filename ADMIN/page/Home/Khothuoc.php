@@ -138,51 +138,53 @@
 								<th class="tt" style="width: 200px; background: rgb(92,152,245);">Chức năng</th>
 							</tr>
 							<?php
-							if (isset($_GET['btnSearch'])) {
-								$key = addslashes($_GET['txtSearch']);
-								$conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-								$sql = "SELECT * FROM `san_pham` INNER JOIN loai_mat_hang on san_pham.Loai_Mat_Hang = loai_mat_hang.Ma_Loai_MH WHERE san_pham.Ten_SP LIKE '%$key%' ORDER BY loai_mat_hang.Ten_Loai_MH";
-								$result = $conn->query($sql);
-								if ($result->num_rows > 0) {
-									while ($row = $result->fetch_assoc()) {
-										echo '
-										<tr class="col1">
-											<th class="tt txt-left">' . $row['Ten_SP'] . '</th>
-											<th class="tt txt-left">' . $row['Ten_Loai_MH'] . '</th>
-											<th class="tt txt-left">' . $row['So_Luong'] . '</th>
-											<th class="tt txt-left">' . $row['Gia'] . ' VNĐ</th>
-											<th class="tt row btn-group">
-												<a href="http://localhost/PharmacyManager/ADMIN/page/Home/ChiTiet.php/?Ma_SP=' . $row['Ma_SP'] . '"><button class="btnChiTiet select">Xem</button></a>
-												<form action="xuLyXoaSanPham.php" method="GET">
-													<input type="text" name="txtMaSP" id="" class="none" value="'.$row['Ma_SP'].'">
-													<input type="submit" name="removeSP" value="Xóa" class="btn btn-submit">
-												</form>
-											</th>
-										</tr>
-										';
+							if ($_SESSION['username'] != NULL) {
+								if (isset($_GET['btnSearch'])) {
+									$key = addslashes($_GET['txtSearch']);
+									$conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
+									$sql = "SELECT * FROM `san_pham` INNER JOIN loai_mat_hang on san_pham.Loai_Mat_Hang = loai_mat_hang.Ma_Loai_MH WHERE san_pham.Ten_SP LIKE '%$key%' ORDER BY loai_mat_hang.Ten_Loai_MH";
+									$result = $conn->query($sql);
+									if ($result->num_rows > 0) {
+										while ($row = $result->fetch_assoc()) {
+											echo '
+											<tr class="col1">
+												<th class="tt txt-left">' . $row['Ten_SP'] . '</th>
+												<th class="tt txt-left">' . $row['Ten_Loai_MH'] . '</th>
+												<th class="tt txt-left">' . $row['So_Luong'] . '</th>
+												<th class="tt txt-left">' . $row['Gia'] . ' VNĐ</th>
+												<th class="tt row btn-group">
+													<a href="http://localhost/PharmacyManager/ADMIN/page/Home/ChiTiet.php/?Ma_SP=' . $row['Ma_SP'] . '"><button class="btnChiTiet select">Xem</button></a>
+													<form action="xuLyXoaSanPham.php" method="GET">
+														<input type="text" name="txtMaSP" id="" class="none" value="'.$row['Ma_SP'].'">
+														<input type="submit" name="removeSP" value="Xóa" class="btn btn-submit">
+													</form>
+												</th>
+											</tr>
+											';
+										}
 									}
-								}
-							} else {
-								$conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-								$sql = "SELECT * FROM `san_pham` INNER JOIN loai_mat_hang on san_pham.Loai_Mat_Hang = loai_mat_hang.Ma_Loai_MH ORDER BY loai_mat_hang.Ten_Loai_MH";
-								$result = $conn->query($sql);
-								if ($result->num_rows > 0) {
-									while ($row = $result->fetch_assoc()) {
-										echo '
-										<tr class="col1">
-											<th class="tt txt-left">' . $row['Ten_SP'] . '</th>
-											<th class="tt txt-left">' . $row['Ten_Loai_MH'] . '</th>
-											<th class="tt txt-left">' . $row['So_Luong'] . '</th>
-											<th class="tt txt-left">' . $row['Gia'] . ' VNĐ</th>
-											<th class="tt row btn-group">
-												<a href="http://localhost/PharmacyManager/ADMIN/page/Home/ChiTiet.php/?Ma_SP=' . $row['Ma_SP'] . '"><button class="btnChiTiet select">Xem</button></a>
-												<form action="xuLyXoaSanPham.php" method="get">
-													<input type="text" name="txtMaSP" id="" class="none" value="'.$row['Ma_SP'].'">
-													<input type="submit" name="removeSP" value="Xóa" class="btn btn-submit">
-												</form>
-											</th>
-										</tr>
-										';
+								} else {
+									$conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
+									$sql = "SELECT * FROM `san_pham` INNER JOIN loai_mat_hang on san_pham.Loai_Mat_Hang = loai_mat_hang.Ma_Loai_MH ORDER BY loai_mat_hang.Ten_Loai_MH";
+									$result = $conn->query($sql);
+									if ($result->num_rows > 0) {
+										while ($row = $result->fetch_assoc()) {
+											echo '
+											<tr class="col1">
+												<th class="tt txt-left">' . $row['Ten_SP'] . '</th>
+												<th class="tt txt-left">' . $row['Ten_Loai_MH'] . '</th>
+												<th class="tt txt-left">' . $row['So_Luong'] . '</th>
+												<th class="tt txt-left">' . $row['Gia'] . ' VNĐ</th>
+												<th class="tt row btn-group">
+													<a href="http://localhost/PharmacyManager/ADMIN/page/Home/ChiTiet.php/?Ma_SP=' . $row['Ma_SP'] . '"><button class="btnChiTiet select">Xem</button></a>
+													<form action="xuLyXoaSanPham.php" method="get">
+														<input type="text" name="txtMaSP" id="" class="none" value="'.$row['Ma_SP'].'">
+														<input type="submit" name="removeSP" value="Xóa" class="btn btn-submit">
+													</form>
+												</th>
+											</tr>
+											';
+										}
 									}
 								}
 							}
