@@ -13,7 +13,7 @@
 
 
         //Kiểm tra tên đăng nhập có tồn tại không
-        $sql = "SELECT * FROM `admin` WHERE TaiKhoan = '$username' && MatKhau = '$password'";
+        $sql = "SELECT * FROM `nhan_vien` WHERE Ten_Dang_Nhap = '$username' && Mat_Khau = '$password'";
 
         $result = $conn->query($sql);
         if ($result->num_rows >0) {

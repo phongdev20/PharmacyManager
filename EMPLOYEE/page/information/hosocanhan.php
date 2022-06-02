@@ -123,30 +123,36 @@
             </div>
             <div style="margin-top: 20px;">
                 <?php
-                $Ma_SP = $_GET['Ma_SP'];
-                $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-                $sql = "SELECT * FROM `san_pham` INNER JOIN loai_mat_hang on san_pham.Loai_Mat_Hang = loai_mat_hang.Ma_Loai_MH WHERE Ma_SP='$Ma_SP'";
+                if (session_id() === '') {
+                  session_start();
+              }
+              $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
+              $username = $_SESSION['username'];
+              $password = $_SESSION['password'];
+
+                $sql = $sql = "SELECT * FROM `nhan_vien` WHERE Ten_Dang_Nhap = '$username' && Mat_Khau = '$password'";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
                         echo
                         '
                         <div>
-                            <h1 class="txt-center">Chi tiết về ' . $row['Ten_SP'] . '</h1>
+                            <h1 class="txt-center">mã nhân viên : ' . $row['Ma_NV'] . '</h1>
                             <div class="row">
-                                <div>
-                                    <img class="img" src="data:image/jpeg;base64,' . base64_encode($row['Hinh_Anh_SP']) . '">
-                                </div>
                                 <div class="detail">
-                                    <span class="item">Giá: </span><span>' . $row['Gia'] . ' VNĐ</span><br />
-                                    <span class="item">Số lượng: </span><span>' . $row['So_Luong'] . '</span><br />
-                                    <span class="item">Loại mặt hàng: </span><span>' . $row['Ten_Loai_MH'] . '</span><br />
-                                    <span class="item">Tính năng: </span><span>' . $row['Tinh_Nang'] . '</span><br />
+                                    <span class="item"> tên nhân viên :</span><span>' . $row['Ten_NV'] . '</span><br />
+                                    <span class="item"> ngày sinh : </span><span>' . $row['Ngay_Sinh'] . '</span><br />
+                                    <span class="item"> giới tính : </span><span>' . $row['Gioi_Tinh'] . '</span><br />
+                                    <span class="item"> địa chỉ: </span><span>' . $row['Dia_Chi'] . '</span><br />
+                                    <span class="item"> chức danh: </span><span>' . $row['Ma_Chuc'] . '</span><br />
+                                    <span class="item"> ngày vào làm : </span><span>' . $row['Ngay_vao_Lam'] . '</span><br />
+                                    <span class="item"> tên đăng nhập : </span><span>' . $row['Ten_Dang_Nhap'] . '</span><br />
+                                    <span class="item"> mật khẩu: </span><span>' . $row['Mat_Khau'] . '</span><br />
                                 </div>
                             </div>
                             
                             <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="../../Home/Khothuoc.php">Trở về </a></button>
+                                <button class="btn btn-return"> <a href="../../page/Home/Khothuoc.php">Trở về </a></button>
                             </div>
                         </div>
                                     ';
