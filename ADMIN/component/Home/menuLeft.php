@@ -1,3 +1,8 @@
+<?php 
+if (session_id() === '') {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,9 +69,6 @@
 <body>
     <div id="menu">
         <?php
-        if (session_id() === '') {
-            session_start();
-        }
         $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
         $username = $_SESSION['username'];
         $password = $_SESSION['password'];
@@ -87,7 +89,7 @@
             <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/Home/Khothuoc.php">Kho thuốc</a>
         </div>
         <div class="box-item">
-            <a class="link" href="LichSuBan.php">Nhà cung cấp</a>
+            <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Nhà cung cấp</a>
         </div>
         <div class="box-item">
             <a class="link" href="ThongKeNgay.php">Nhân viên</a>

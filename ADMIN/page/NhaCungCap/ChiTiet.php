@@ -45,6 +45,7 @@
 
         .item {
             font-weight: bold;
+            margin-bottom: 8px;
         }
 
         .return {
@@ -108,6 +109,14 @@
             background: #ef2235;
             cursor: pointer;
         }
+
+        .sdt {
+            color: #dc3545;
+        }
+
+        .email {
+            color: #0d6efd;
+        }
     </style>
 </head>
 
@@ -123,32 +132,29 @@
             </div>
             <div style="margin-top: 20px;">
                 <?php
-                $Ma_SP = $_GET['Ma_SP'];
+                $Ma_NCC = $_GET['Ma_NCC'];
 
                 $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-                $sql = "SELECT * FROM `san_pham` INNER JOIN loai_mat_hang on san_pham.Loai_Mat_Hang = loai_mat_hang.Ma_Loai_MH WHERE Ma_SP='$Ma_SP'";
+                $sql = "SELECT * FROM `nha_cung_cap` WHERE `Ma_NCC` = '$Ma_NCC'";
                 $result = $conn->query($sql);
                 if ($result) {
                     while ($row = $result->fetch_assoc()) {
                         echo
                         '
                         <div>
-                            <h1 class="txt-center">Chi tiết về ' . $row['Ten_SP'] . '</h1>
-                            <div class="row">
-                                <div>
-                                    <img class="img" src="data:image/jpeg;base64,' . base64_encode($row['Hinh_Anh_SP']) . '">
-                                </div>
+                            <h1 class="txt-center">Chi tiết về ' . $row['Ten_NCC'] . '</h1>
+                            <div>
                                 <div class="detail">
-                                    <span class="item">Giá: </span><span>' . $row['Gia'] . ' VNĐ</span><br />
-                                    <span class="item">Số lượng: </span><span>' . $row['So_Luong'] . '</span><br />
-                                    <span class="item">Loại mặt hàng: </span><span>' . $row['Ten_Loai_MH'] . '</span><br />
-                                    <span class="item">Tính năng: </span><span>' . $row['Tinh_Nang'] . '</span><br />
+                                    <span class="item">Số điện thoại: </span><span class="sdt">' . $row['SDT'] . '</span><br />
+                                    <span class="item">Email: </span><span class="email">' . $row['Email'] . '</span><br />
+                                    <span class="item">Địa chỉ: </span><span>' . $row['Dia_Chi'] . '</span><br />
+                                    <span class="item">Các mặt hàng: </span><span>' . $row['Cac_Mat_Hang'] . '</span><br />
                                 </div>
                             </div>
                             
                             <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/Home/Khothuoc.php">Trở về </a></button>
-                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/Home/suaSanPham.php?Ma_SP='.$Ma_SP.'">Sửa thông tin</a></button>
+                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Trở về </a></button>
+                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/suaNCC.php?Ma_NCC='.$Ma_NCC.'">Sửa thông tin</a></button>
                             </div>
                         </div>
                                     ';

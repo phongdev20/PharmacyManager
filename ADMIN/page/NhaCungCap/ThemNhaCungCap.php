@@ -1,19 +1,3 @@
-<?php
-$Ma_SP = $_GET['Ma_SP'];
-$conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-$sql = "SELECT `Ma_SP`, `Ten_SP`, `Hinh_Anh_SP`, `Gia`, `So_Luong`, `Tinh_Nang`, `Loai_Mat_Hang` FROM `san_pham` WHERE `Ma_SP` = '$Ma_SP'";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $TenSP = $row['Ten_SP'];
-        $ImgSP = $row['Hinh_Anh_SP'];
-        $GiaSP = $row['Gia'];
-        $SoLuongSP = $row['So_Luong'];
-        $TinhNangSP = $row['Tinh_Nang'];
-        $LoaiSP = $row['Loai_Mat_Hang'];
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +5,7 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sửa đổi thông tin sản phẩm</title>
+    <title>Thêm sản phẩm</title>
     <style>
         * {
             margin: 0;
@@ -120,10 +104,6 @@ if ($result->num_rows > 0) {
             margin-top: 16px;
             margin-bottom: 8px;
         }
-
-        .none {
-            display: none;
-        }
     </style>
 </head>
 
@@ -138,56 +118,35 @@ if ($result->num_rows > 0) {
                 <?php include '../../component/Home/header.php' ?>
             </div>
             <div id="box-add">
-                <h1 class="txt-header">SỬA THÔNG TIN SẢN PHẨM</h1>
-                <form action="xuLySuaSanPham.php" method="post">
+                <h1 class="txt-header">THÊM MỚI NHÀ CUNG CẤP</h1>
+                <form action="xuLyThemNCC.php" method="post">
                     <div class="box-form">
-                        <input type="text" name="txtMaSP" id="" class="input-box none" value="<?php echo $Ma_SP ?>">
                         <div>
-                            <p class="txt-index">Tên sản phẩm</p>
-                            <input type="text" name="txtTenSP" id="" class="input-box" value="<?php echo $TenSP ?>">
+                            <p class="txt-index">Tên nhà cung cấp</p>
+                            <input type="text" name="txtTen" id="" class="input-box">
                         </div>
                         <div>
-                            <p class="txt-index">Hình ảnh</p>
-                            <input type="file" name="imgSP" id="">
+                            <p class="txt-index">Số điện thoại</p>
+                            <input type="text" name="txtSDT" id="" class="input-box">
                         </div>
                         <div>
-                            <p class="txt-index">Giá</p>
-                            <input type="text" name="txtGia" id="" class="input-box" value="<?php echo $GiaSP ?>">
+                            <p class="txt-index">Email</p>
+                            <input type="email" name="txtEmail" id="" class="input-box">
                         </div>
                         <div>
-                            <p class="txt-index">Số lượng</p>
-                            <input type="text" name="txtSoLuong" id="" class="input-box" value="<?php echo $SoLuongSP ?>">
+                            <p class="txt-index">Địa chỉ</p>
+                            <input type="text" name="txtDiaChi" id="" class="input-box">
                         </div>
                         <div>
-                            <p class="txt-index">Tính năng</p>
-                            <textarea name="txtTinhNang" cols="400" rows="4" class="input-box"><?php echo $TinhNangSP ?></textarea>
+                            <p class="txt-index">Các mặt hàng</p>
+                            <textarea name="txtMatHang" cols="400" rows="4" class="input-box"></textarea>
                         </div>
-                        <div>
-                            <p class="txt-index">Loại sản phẩm</p>
-                            <select name="txtLoaiSP" id="" class="input-box">
-                                <?php
-                                $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-                                $sql = "SELECT * FROM `loai_mat_hang`";
-                                $result = $conn->query($sql);
-                                if ($result->num_rows > 0) {
-                                    while ($row = $result->fetch_assoc()) {
-                                        echo '
-                                        <option value="' . $row['Ma_Loai_MH'] . '">' . $row['Ten_Loai_MH'] . '</option>
-										';
-                                    }
-                                }
-                                ?>
-                            </select>
-                        </div>
+                        
                     </div>
-                    <?php
-                    echo '
                     <div class="click-group rowItem">
-                        <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/Home/ChiTiet.php?Ma_SP='.$Ma_SP.'">Trở về </a></button>
-                        <button type="submit" name="updateSP" class="btn btn-submit">Sửa sản phẩm</button>
+                        <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Trở về </a></button>
+                        <button type="submit" name="addNCC" class="btn btn-submit">+ Thêm</button>
                     </div>
-                    ';
-                    ?>
                 </form>
             </div>
         </div>
