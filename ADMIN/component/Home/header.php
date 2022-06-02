@@ -61,7 +61,7 @@
                 echo '
                 <div class="row user">
                     <a href=""><img src="http://localhost/PharmacyManager/assets/anh/user.png" alt=""></a>
-                    <p class="logout"><a class="link-top" href="http://localhost/PharmacyManager/ADMIN/page/Login/index.php">Đăng xuất</a></p>
+                    <p class="logout"><a class="link-top" href="http://localhost/PharmacyManager/ADMIN/page/Login/xuLyDangXuat.php">Đăng xuất</a></p>
                 </div> 
                 ';
             }
