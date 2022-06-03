@@ -60,7 +60,7 @@
             while ($row = $result->fetch_assoc()) {
                 echo '
                 <div class="row user">
-                    <a href=""><img src="../../../assets/anh/" alt=""></a>
+                    <a href=""><img src="../../../assets/anh/user.png" alt=""></a>
                     <p class="logout"><a class="link-top" href="../../../EMPLOYEE/page/Login/index.php">Đăng xuất</a></p>
                 </div> 
                 ';
