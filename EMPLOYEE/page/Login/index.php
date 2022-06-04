@@ -4,7 +4,7 @@
 <head>
 	<title>Đăng nhập</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="./styles1.css">
 </head>
 
 <body id="body">
@@ -22,17 +22,17 @@
 		</div>
 		<div>
 			<div class="loginboxicon">
-				<h1 style="text-align: center; font-size: 20px;line-height: 10px; color: white;">Login:</h1>
+				<h1 style="text-align: center; font-size: 20px;line-height: 30px; color: white;">Login:</h1>
 			</div>
 		</div>
 		<form action="xulydangnhap.php" method="post">
 			<div class="area1">
 				<div class="whitebox">
-					<img src="../../../assets/anh/human.jpg" height="50px" width="50px" alt="" / style="padding: 3px 28px">
+					<img src="../../../assets/anh/human.jpg" height="50px" width="50px" alt="" / style="padding: 5px 5px; margin-left: 20px;">
 				</div>
 				<input class="inp" type="text" placeholder="Nhập tài khoản của bạn..." name="username"><br>
 				<div class="whitebox">
-					<img src="../../../assets/anh/lock.jpg" height="35px" width="30px" alt="" / style="padding: 10px 37px">
+					<img src="../../../assets/anh/lock.jpg" height="40px" width="35px" alt="" / style="padding: 5px 5px; margin-left: 30px; margin-top: 5px;">
 				</div>
 				<input class="inp" type="password" placeholder="Nhập mật khẩu của bạn..." name="password"><br>
 				<input type="submit" name="dangnhap" value='Đăng nhập' class="bttdn" />

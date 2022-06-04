@@ -46,6 +46,7 @@
 
 <body>
     <div id="header">
+        <div style="height: 0;width: 1050px; border-top: 80px solid white; border-right: 50px solid transparent; position: absolute;"></div>
         <?php
         if (session_id() === '') {
             session_start();
