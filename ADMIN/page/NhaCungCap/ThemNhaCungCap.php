@@ -144,7 +144,7 @@
                         
                     </div>
                     <div class="click-group rowItem">
-                        <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Trở về </a></button>
+                        <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Trở về </a></button>
                         <button type="submit" name="addNCC" class="btn btn-submit">+ Thêm</button>
                     </div>
                 </form>

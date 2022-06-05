@@ -112,12 +112,11 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class = "main_left">
-        <?php include '../../component/Home/MenuLeft/ML_LichSuBan.php' ?>
+        <div style="position: absolute;">
+            <?php include '../../component/Home/MenuLeft/ML_LichSuBan.php' ?>
 		</div>
-        <div style="min-height: 100vh;">
-            <div>
+        <div style="min-height: 100vh;margin-left:  300px;">
+            <div style="margin-left:  0px;">
                 <?php include '../../component/Home/header.php' ?>
             </div>
             <div style="margin-top: 20px;">
@@ -144,16 +143,16 @@
                                 </div>
                             </div>
                             
-                            <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="../../history/history.php">Trở về </a></button>
-                            </div>
+                            
                         </div>
                                     ';
                     }
                 }
                 $conn->close();
                 ?>
-                
+                <div class="click-group rowItem">
+                                <button class="btn btn-return"> <a href="../../history/history.php">Trở về </a></button>
+                            </div>
             </div>
         </div>
     </div>

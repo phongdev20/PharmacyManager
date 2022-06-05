@@ -33,7 +33,7 @@
 <body>
     <div class="row">
         <div>
-            <?php include '../../component/Home/menuLeft/ML_HoaDonBan.php' ?>>
+            <?php include '../../component/Home/menuLeft/ML_HoaDonNhap.php' ?>>
         </div>
 
         <div style="min-height: 100vh; margin-left: 300px;">
@@ -49,10 +49,10 @@
                     </tr>
                 
                 <?php
-                $Ma_HD = $_GET['Ma_HD'];
+                $Ma_Nhap = $_GET['Ma_Nhap'];
 
                 $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-                $sql = "SELECT san_pham.Ten_SP, chi_tiet_hoa_don.So_Luong, san_pham.Gia FROM `chi_tiet_hoa_don` JOIN san_pham on chi_tiet_hoa_don.Ma_SP = san_pham.Ma_SP WHERE `Ma_Hoa_Don` = '$Ma_HD'";
+                $sql = "SELECT san_pham.Ten_SP, chi_tiet_nhap_hang.So_Luong, san_pham.Gia FROM `chi_tiet_nhap_hang` JOIN san_pham on chi_tiet_nhap_hang.Ma_SP = san_pham.Ma_SP WHERE `Ma_Nhap` = '$Ma_Nhap'";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {

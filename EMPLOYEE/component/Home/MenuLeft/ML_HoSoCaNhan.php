@@ -75,25 +75,23 @@
         ?>
         <div style="position: absolute;">
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/Home/Khothuoc.php">Kho thuốc</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/EMPLOYEE/page/Home/Khothuoc.php">Kho thuốc</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/history/history.php">Lịch sử bán</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/EMPLOYEE/page/history/history.php">Lịch sử bán</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/LapHoaDon/lapHoaDon.php">lập hóa đơn</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/EMPLOYEE/page/LapHoaDon/lapHoaDon.php">Lập hóa đơn</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/information/hosocanhan.php">Hồ sơ cá nhân</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/EMPLOYEE/page/information/hosocanhan.php">Hồ sơ cá nhân</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/chamsochethong/ChamSocHeThong.php">Chăm sóc hệ thống</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/EMPLOYEE/page/chamsochethong/ChamSocHeThong.php">Chăm sóc hệ thống</a></h1>
             </div>
         </div>
         <div>
             <div style="width: 20px; height: 60vh; background: rgb(251, 250, 246); margin-left: 277px; margin-top: 1px;">
-                <div id="B1" style="width: 20px; height: 60px; background: rgb(54, 129, 243); visibility: hidden;"></div>
-                <div id="B1" style="width: 20px; height: 59px; background: rgb(54, 129, 243); visibility: hidden;"></div>
                 <div id="B1" style="width: 20px; height: 60px; background: rgb(54, 129, 243); visibility: hidden;"></div>
                 <div id="B1" style="width: 20px; height: 59px; background: rgb(54, 129, 243); visibility: hidden;"></div>
                 <div id="B1" style="width: 20px; height: 60px; background: rgb(54, 129, 243); visibility: hidden;"></div>

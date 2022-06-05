@@ -106,10 +106,10 @@ if (session_id() === '') {
                 <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/NhanVien/NhanVien.php">Nhân viên</a>
             </div>
             <div class="box-item">
-                <a class="link" href="ThongKeThang.php">Thống kê</a>
+                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/HoaDonTra/HoaDonTra.php">Hóa đơn trả</a>
             </div>
             <div class="box-item">
-                <a class="link" href="LichSuNhapKho.php">Hóa đơn nhập</a>
+                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/HoaDonNhap/HoaDonNhap.php">Hóa đơn nhập</a>
             </div>
             <div class="box-item">
                 <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/HoaDonBan/HoaDonBan.php" >Hóa đơn bán</a>
@@ -123,14 +123,14 @@ if (session_id() === '') {
         </div>
         <div>
             <div style="width: 20px; height: 60vh; background: rgb(251, 250, 246); margin-left: 277px; margin-top: 1px;">
+                <div id="B1" style="width: 20px; height: 54px; background: rgb(54, 129, 243); visibility: hidden;"></div>
+                <div id="B1" style="width: 20px; height: 54px; background: rgb(54, 129, 243); visibility: hidden;"></div>
                 <div id="B1" style="width: 20px; height: 53px; background: rgb(54, 129, 243); visibility: hidden;"></div>
-                <div id="B1" style="width: 20px; height: 55px; background: rgb(54, 129, 243); visibility: hidden;"></div>
-                <div id="B1" style="width: 20px; height: 53px; background: rgb(54, 129, 243); visibility: hidden;"></div>
-                <div id="B1" style="width: 20px; height: 55px; background: rgb(54, 129, 243); visibility: hidden;"></div>
+                <div id="B1" style="width: 20px; height: 54px; background: rgb(54, 129, 243); visibility: hidden;"></div>
                 <div id="B1" style="width: 20px; height: 53px; background: rgb(54, 129, 243); visibility: visible;"></div>
                 <div id="B1" style="width: 20px; height: 55px; background: rgb(54, 129, 243); visibility: hidden;"></div>
                 <div id="B1" style="width: 20px; height: 53px; background: rgb(54, 129, 243); visibility: hidden;"></div>
-                <div id="B1" style="width: 20px; height: 55px; background: rgb(54, 129, 243); visibility: hidden;"></div>
+                <div id="B1" style="width: 20px; height: 54px; background: rgb(54, 129, 243); visibility: hidden;"></div>
             </div>
         </div>
     </div>

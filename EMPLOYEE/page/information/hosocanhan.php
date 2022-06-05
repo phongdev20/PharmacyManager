@@ -151,10 +151,6 @@
                                     <span class="item"> mật khẩu: </span><span>' . $row['Mat_Khau'] . '</span><br />
                                 </div>
                             </div>
-                            
-                            <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="../Home/Khothuoc.php">Trở về </a></button>
-                            </div>
                         </div>
                                     ';
                     }

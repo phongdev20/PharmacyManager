@@ -183,7 +183,7 @@ if ($result->num_rows > 0) {
                     <?php
                     echo '
                     <div class="click-group rowItem">
-                        <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/Home/ChiTiet.php?Ma_SP='.$Ma_SP.'">Trở về </a></button>
+                        <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/Home/ChiTiet.php?Ma_SP='.$Ma_SP.'">Trở về </a></button>
                         <button type="submit" name="updateSP" class="btn btn-submit">Sửa sản phẩm</button>
                     </div>
                     ';

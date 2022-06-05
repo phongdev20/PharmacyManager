@@ -132,7 +132,7 @@ if ($result->num_rows > 0) {
             <?php include '../../component/Home/menuLeft/ML_LapHoaDon.php' ?>
         </div>
 
-        <div style="min-height: 100vh; margin-left: 300px;">
+        <div style="min-height: 100vh;">
             <div>
                 <?php include '../../component/Home/header.php' ?>
             </div>
@@ -140,12 +140,12 @@ if ($result->num_rows > 0) {
                 <h1 class="txt-header">Lập Hóa Đơn</h1>
                 <form action="#" method="post">
                     <div class="box-form">
-                        
+
                         <div>
                             <p class="txt-index">Tên khách hàng</p>
-														<input type="text" name="#" id="" class="input-box" value="">
+                            <input type="text" name="#" id="" class="input-box" value="">
                         </div>
-												<div>
+                        <div>
                             <p class="txt-index">Tên sản phẩm</p>
                             <select name="txtTenSP" id="" class="input-box">
                                 <?php
@@ -162,23 +162,23 @@ if ($result->num_rows > 0) {
                                 ?>
                             </select>
                         </div>
-												<div>
+                        <div>
                             <p class="txt-index">Số lượng</p>
-                            <input type="number" name="txtTenSP" id="" class="input-box" value="">
+                            <input type="number" name="txtTenSP" id="sl" class="input-box" value="1" onchange="change()">
                         </div>
                         <div>
                             <p class="txt-index">Giá</p>
-                            <input type="text" name="txtGia" id="" class="input-box" value="<?php echo $GiaSP ?>">
+                            <input type="text" name="txtGia" id="don" class="input-box" value="<?php echo $GiaSP ?>">
                         </div>
-												<div>
+                        <div>
                             <p class="txt-index">Thành tiền</p>
-                            <input type="text" name="txtGia" id="" class="input-box" value="<?php echo $GiaSP*$SoLuongSP ?>">
+                            <input type="text" name="txtGia" id="tien" class="input-box" value="<?php $GiaSP * $SoLuongSP ?>">
                         </div>
                     </div>
                     <?php
                     echo '
                     <div class="click-group rowItem">
-                        <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/EMPLOYEE/page/LapHoaDon/lapHoaDon.php">Trở về </a></button>
+                        <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/EMPLOYEE/page/LapHoaDon/lapHoaDon.php">Trở về </a></button>
 												<button type="submit" name="updateSP" class="btn btn-submit">Thanh toán </button>
                     </div>
                     ';
@@ -187,6 +187,15 @@ if ($result->num_rows > 0) {
             </div>
         </div>
     </div>
+
+    <script>
+        function change(){
+            var x = document.getElementById("sl").value;
+            var y = document.getElementById("don").value;
+            document.getElementById("tien").value = (x * y);
+            document.getElementById("tien").value += '.000' ;
+        }
+    </script>
 </body>
 
 </html>

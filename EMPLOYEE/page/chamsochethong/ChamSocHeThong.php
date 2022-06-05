@@ -21,7 +21,7 @@
 			<?php include '../../component/Home/menuLeft/ML_ChamSocHeThong.php' ?>
 		</div>
 
-		<div style="min-height: 100vh; margin-left: 300px;">
+		<div style="min-height: 100vh; margin-left: 0px;">
 			<div>
 				<?php include '../../component/Home/header.php' ?>
 			</div>

@@ -150,8 +150,8 @@
                             </div>
                             
                             <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhanVien/NhanVien.php">Trở về </a></button>
-                                <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhanVien/suaNV.php?Ma_NV=' . $Ma_NV . '">Sửa thông tin</a></button>
+                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhanVien/NhanVien.php">Trở về </a></button>
+                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhanVien/suaNV.php?Ma_NV=' . $Ma_NV . '">Sửa thông tin</a></button>
                             </div>
                         </div>
                                     ';

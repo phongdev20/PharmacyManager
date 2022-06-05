@@ -65,17 +65,17 @@
                             while ($row = $result->fetch_assoc()) {
                                 echo '
                                 <tr>
-                                    <th class="txt-left">Họ và tên: </th>
-                                    <td>'.$row['HoTen'].'</td>
+                                    <th class="txt-left" style="width: 300px; background: rgb(92, 152, 245);">Họ và tên: </th>
+                                    <td style="width: 300px;">'.$row['HoTen'].'</td>
                                 </tr>
         
                                 <tr>
-                                    <th class="txt-left">Tên đăng nhập: </th>
+                                    <th class="txt-left" style="background: rgb(24, 205, 229);">Tên đăng nhập: </th>
                                     <td>'.$row['TaiKhoan'].'</td>
                                 </tr>
         
                                 <tr>
-                                    <th class="txt-left">Mật khẩu: </th>
+                                    <th class="txt-left" style="background: rgb(92, 152, 245);">Mật khẩu: </th>
                                     <td>'.$row['MatKhau'].'</td>
                                 </tr>
         
