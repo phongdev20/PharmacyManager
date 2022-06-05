@@ -154,7 +154,7 @@
 											<th class="tt txt-left">' . $row['Gioi_Tinh'] . '</th>
                                             <th class="tt txt-left">' . $row['Ten_Chuc'] . '</th>
 											<th class="tt row btn-group">
-												<a href="http://localhost/PharmacyManager/ADMIN/page/NhanVien/ChiTiet.php/?Ma_NV=' . $row['Ma_NV'] . '"><button class="btnChiTiet select">Xem</button></a>
+												<a href="http://localhost:81/PharmacyManager/ADMIN/page/NhanVien/ChiTiet.php/?Ma_NV=' . $row['Ma_NV'] . '"><button class="btnChiTiet select">Xem</button></a>
 												<form action="xuLyXoaNV.php" method="GET">
 													<input type="text" name="txtMaNV" id="" class="none" value="' . $row['Ma_NV'] . '">
 													<input type="submit" name="removeNV" value="Xóa" class="btn btn-submit">
@@ -177,7 +177,7 @@
                                             <th class="tt txt-left">' . $row['Gioi_Tinh'] . '</th>
                                             <th class="tt txt-left">' . $row['Ten_Chuc'] . '</th>
                                             <th class="tt row btn-group">
-                                                <a href="http://localhost/PharmacyManager/ADMIN/page/NhanVien/ChiTiet.php/?Ma_NV=' . $row['Ma_NV'] . '"><button class="btnChiTiet select">Xem</button></a>
+                                                <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhanVien/ChiTiet.php/?Ma_NV=' . $row['Ma_NV'] . '"><button class="btnChiTiet select">Xem</button></a>
                                                 <form action="xuLyXoaNV.php" method="GET">
                                                     <input type="text" name="txtMaNV" id="" class="none" value="' . $row['Ma_NV'] . '">
                                                     <input type="submit" name="removeNV" value="Xóa" class="btn btn-submit">

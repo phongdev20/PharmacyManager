@@ -53,7 +53,7 @@
 
 <body>
     <div id="menu">
-        <?php
+    <?php
         if (session_id() === '') {
             session_start();
         }
@@ -61,39 +61,33 @@
         $username = $_SESSION['username'];
         $password = $_SESSION['password'];
 
-        $sql = "SELECT * FROM `admin` WHERE TaiKhoan = '$username' && MatKhau = '$password'";
+        $sql = "SELECT * FROM `nhan_vien` WHERE Ten_Dang_Nhap = '$username' && Mat_Khau = '$password'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo '
                 <div class="box-name">
-                    <h1 class="name">Xin chào<br>'.$row['HoTen'].'</h1>
+                    <h1 class="name">Xin chào<br>'.$row['Ten_NV'].'</h1>
                 </div>';
             }
         }
         $conn->close();
         ?>
-        <div style="position: absolute;">
+       <div style="position: absolute;">
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="http://localhost/PharmacyManager/ADMIN/Home/Khothuoc.php">Kho thuốc</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/Home/Khothuoc.php">Kho thuốc</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="../../page/history/history.php">Lịch sử bán</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/history/history.php">Lịch sử bán</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="ThongKeNgay.php">Thống kê ngày</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/LapHoaDon/lapHoaDon.php">lập hóa đơn</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="ThongKeThang.php">Thống kê tháng</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/information/hosocanhan.php">Hồ sơ cá nhân</a></h1>
             </div>
             <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="LichSuNhapKho.php">Lịch sử nhập kho</a></h1>
-            </div>
-            <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="HoSoCaNhan.php">Hồ sơ cá nhân</a></h1>
-            </div>
-            <div class="box-item">
-                <h1 class="itemmenu"><a class="link" href="ChamSocHeThong.php">Chăm sóc hệ thống</a></h1>
+                <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/chamsochethong/ChamSocHeThong.php">Chăm sóc hệ thống</a></h1>
             </div>
         </div>
         <div>

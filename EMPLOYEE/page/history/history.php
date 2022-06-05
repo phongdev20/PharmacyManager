@@ -9,8 +9,8 @@
 
 <body>
 	<div class="row">
-		<div class = "main_left">
-			<?php include '../../component/Home/menuLeft.php' ?>
+	<div class = "main_left">
+			<?php include '../../component/Home/MenuLeft/ML_LichSuBan.php' ?>
 		</div>
 
 		<div class="main_right">

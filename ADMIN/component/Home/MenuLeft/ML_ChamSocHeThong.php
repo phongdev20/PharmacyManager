@@ -97,13 +97,13 @@ if (session_id() === '') {
         ?>
         <div style="position: absolute;">
             <div class="box-item" class="item1">
-                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/Home/Khothuoc.php" onclick="change_background()">Kho thuốc</a>
+                <a class="link" href="http://localhost:81/PharmacyManager/ADMIN/page/Home/Khothuoc.php" onclick="change_background()">Kho thuốc</a>
             </div>
             <div class="box-item">
-                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Nhà cung cấp</a>
+                <a class="link" href="http://localhost:81/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Nhà cung cấp</a>
             </div>
             <div class="box-item">
-                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/NhanVien/NhanVien.php">Nhân viên</a>
+                <a class="link" href="http://localhost:81/PharmacyManager/ADMIN/page/NhanVien/NhanVien.php">Nhân viên</a>
             </div>
             <div class="box-item">
                 <a class="link" href="ThongKeThang.php">Thống kê</a>
@@ -115,10 +115,10 @@ if (session_id() === '') {
                 <a class="link" href="HoSoCaNhan.php" >Hóa đơn bán</a>
             </div>
             <div class="box-item">
-                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/HoSo/HoSo.php">Hồ sơ cá nhân</a>
+                <a class="link" href="http://localhost:81/PharmacyManager/ADMIN/page/HoSo/HoSo.php">Hồ sơ cá nhân</a>
             </div>
             <div class="box-item">
-                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/ChamSocHeThong/ChamSocHeThong.php">Chăm sóc hệ thống</a>
+                <a class="link" href="http://localhost:81/PharmacyManager/ADMIN/page/ChamSocHeThong/ChamSocHeThong.php">Chăm sóc hệ thống</a>
             </div>
         </div>
         <div>

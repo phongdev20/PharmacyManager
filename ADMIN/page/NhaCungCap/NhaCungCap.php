@@ -152,7 +152,7 @@
 											<th class="tt txt-left">' . $row['SDT'] . '</th>
 											<th class="tt txt-left">' . $row['Email'] . '</th>
 											<th class="tt row btn-group">
-												<a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/ChiTiet.php/?Ma_NCC=' . $row['Ma_NCC'] . '"><button class="btnChiTiet select">Xem</button></a>
+												<a href="http://localhost:81/PharmacyManager/ADMIN/page/NhaCungCap/ChiTiet.php/?Ma_NCC=' . $row['Ma_NCC'] . '"><button class="btnChiTiet select">Xem</button></a>
 												<form action="xuLyXoaNCC.php" method="GET">
 													<input type="text" name="txtMaNCC" id="" class="none" value="' . $row['Ma_NCC'] . '">
 													<input type="submit" name="removeNCC" value="Xóa" class="btn btn-submit">
@@ -174,7 +174,7 @@
 											<th class="tt txt-left">' . $row['SDT'] . '</th>
 											<th class="tt txt-left">' . $row['Email'] . '</th>
 											<th class="tt row btn-group">
-												<a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/ChiTiet.php/?Ma_NCC=' . $row['Ma_NCC'] . '"><button class="btnChiTiet select">Xem</button></a>
+												<a href="http://localhost:81/PharmacyManager/ADMIN/page/NhaCungCap/ChiTiet.php/?Ma_NCC=' . $row['Ma_NCC'] . '"><button class="btnChiTiet select">Xem</button></a>
 												<form action="xuLyXoaNCC.php" method="GET">
 													<input type="text" name="txtMaNCC" id="" class="none" value="' . $row['Ma_NCC'] . '">
 													<input type="submit" name="removeNCC" value="Xóa" class="btn btn-submit">

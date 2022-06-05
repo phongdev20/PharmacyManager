@@ -160,7 +160,7 @@
                         </div>
                     </div>
                     <div class="click-group rowItem">
-                        <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/Home/Khothuoc.php">Trở về </a></button>
+                        <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/Home/Khothuoc.php">Trở về </a></button>
                         <button type="submit" name="addSP" class="btn btn-submit">Thêm sản phẩm</button>
                     </div>
                 </form>

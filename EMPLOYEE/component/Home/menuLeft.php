@@ -86,7 +86,7 @@
             <h1 class="itemmenu"><a class="link" href="../../page/HoSoCaNhan.php">Đổi Mật Khẩu</a></h1>
         </div>
         <div class="box-item">
-            <h1 class="itemmenu"><a class="link" href="../../page/ChamSocHeThong.php">Chăm sóc hệ thống</a></h1>
+            <h1 class="itemmenu"><a class="link" href="http://localhost:81/PharmacyManager/EMPLOYEE/page/ChamSocHeThong.php">Chăm sóc hệ thống</a></h1>
         </div>
         
     </div>

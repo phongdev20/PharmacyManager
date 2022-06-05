@@ -153,8 +153,8 @@
                             </div>
                             
                             <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Trở về </a></button>
-                                <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/suaNCC.php?Ma_NCC='.$Ma_NCC.'">Sửa thông tin</a></button>
+                                <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Trở về </a></button>
+                                <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhaCungCap/suaNCC.php?Ma_NCC='.$Ma_NCC.'">Sửa thông tin</a></button>
                             </div>
                         </div>
                                     ';
