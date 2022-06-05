@@ -19,14 +19,14 @@
 
         #trapezium {
             height: 0;
-            width: 420px;
+            width: 470px;
             border-bottom: 100px solid rgb(24, 205, 229);
             border-right: 50px solid transparent;
         }
 
         #trapezium2 {
             height: 0;
-            width: 360px;
+            width: 450px;
             border-bottom: 100px solid rgb(1, 74, 153);
             border-right: 50px solid transparent;
             padding-top: 20px;
@@ -42,7 +42,7 @@
             float: left;
             color: white;
             font-weight: bold;
-            font-size: 25px;
+            font-size: 30px;
             line-height: 0px;
             margin-left: 30px;
         }
@@ -65,17 +65,17 @@
     <footer>
         <div id="trapezium">
             <div id="trapezium2">
-                <h1 style="font-size: 25px; padding-left: 20px; padding-top: 10px; color: white;">Chăm sóc khách hàng</h1>
+                <h1 style="font-size: 30px; padding-left: 30px; padding-top: 30px; color: white; ">Chăm sóc khách hàng</h1>
             </div>
         </div>
         <div id="rec" class="row">
             <p class="lh">Liên hệ:</p>
             <div class="row">
-                <img src="../../assets/anh/call.png" height="30px" width="30px" alt="" / style="float: left; margin-left: 500px; margin-top: 10px;">
+                <img src="../../../assets/anh/call.png" height="30px" width="30px" alt="" / style="float: left; margin-left: 350px; margin-top: 0px;">
                 <p class="lh">0123123321</p>
             </div>
             <div class="row">
-                <img src="../../assets/anh/email.png" height="50px" width="50px" alt="" / style="float: left; margin-left: 100px;">
+                <img src="../../../assets/anh/email.png" height="50px" width="50px" alt="" / style="float: left; margin-left: 250px;">
                 <p class="lh">ktxteam012@gmail.com</p>
             </div>
         </div>

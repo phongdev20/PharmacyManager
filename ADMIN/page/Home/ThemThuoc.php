@@ -110,7 +110,7 @@
 <body>
     <div class="row">
         <div>
-            <?php include '../../component/Home/menuLeft.php' ?>
+            <?php include '../../component/Home/menuLeft/ML_KhoThuoc.php' ?>
         </div>
 
         <div style="min-height: 100vh; margin-left: 300px;">
