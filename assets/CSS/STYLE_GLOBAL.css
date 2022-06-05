@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+.txt-left {
+    text-align: left;
+}
+
 .item-center {
     display: flex;
     flex-direction: column;

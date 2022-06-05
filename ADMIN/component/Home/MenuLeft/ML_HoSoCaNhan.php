@@ -103,7 +103,7 @@ if (session_id() === '') {
                 <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/NhaCungCap.php">Nhà cung cấp</a>
             </div>
             <div class="box-item">
-                <a class="link" href="ThongKeNgay.php">Nhân viên</a>
+                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/NhanVien/NhanVien.php">Nhân viên</a>
             </div>
             <div class="box-item">
                 <a class="link" href="ThongKeThang.php">Thống kê</a>
@@ -115,10 +115,10 @@ if (session_id() === '') {
                 <a class="link" href="HoSoCaNhan.php" >Hóa đơn bán</a>
             </div>
             <div class="box-item">
-                <a class="link" href="ChamSocHeThong.php">Hồ sơ cá nhân</a>
+                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/HoSo/HoSo.php">Hồ sơ cá nhân</a>
             </div>
             <div class="box-item">
-                <a class="link" href="ChamSocHeThong.php">Chăm sóc hệ thống</a>
+                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/ChamSocHeThong/ChamSocHeThong.php">Chăm sóc hệ thống</a>
             </div>
         </div>
         <div>
