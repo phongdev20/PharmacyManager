@@ -110,12 +110,13 @@
 
 <body>
 	<div class="row">
-		<div>
-			<?php include '../../component/Home/MenuLeft/ML_KhoThuoc.php' ?>
+	<div class = "main_left">
+			<?php include '../../component/Home/menuLeft.php' ?>
 		</div>
 
-		<div style="min-height: 100vh;">
-			<div>
+		<div class="main_right">
+    <div style="min-height: 100vh;">
+			<div >
 				<?php include '../../component/Home/header.php' ?>
 			</div>
 			<div id="KhoThuoc">

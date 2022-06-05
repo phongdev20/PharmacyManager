@@ -124,11 +124,11 @@
             <div style="margin-top: 20px;">
                 <?php
                 if (session_id() === '') {
-                  session_start();
-              }
-              $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-              $username = $_SESSION['username'];
-              $password = $_SESSION['password'];
+                    session_start();
+                }
+                $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
+                $username = $_SESSION['username'];
+                $password = $_SESSION['password'];
 
                 $sql = $sql = "SELECT * FROM `nhan_vien` WHERE Ten_Dang_Nhap = '$username' && Mat_Khau = '$password'";
                 $result = $conn->query($sql);
@@ -137,9 +137,10 @@
                         echo
                         '
                         <div>
-                            <h1 class="txt-center">mã nhân viên : ' . $row['Ma_NV'] . '</h1>
+                            <h1 class="txt-center">Hồ Sơ Cá Nhân </h1>
                             <div class="row">
                                 <div class="detail">
+                                    <span class="item"> mã nhân viên :</span><span>' . $row['Ma_NV'] . '</span><br />
                                     <span class="item"> tên nhân viên :</span><span>' . $row['Ten_NV'] . '</span><br />
                                     <span class="item"> ngày sinh : </span><span>' . $row['Ngay_Sinh'] . '</span><br />
                                     <span class="item"> giới tính : </span><span>' . $row['Gioi_Tinh'] . '</span><br />
@@ -152,7 +153,7 @@
                             </div>
                             
                             <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="../../page/Home/Khothuoc.php">Trở về </a></button>
+                                <button class="btn btn-return"> <a href="../Home/Khothuoc.php">Trở về </a></button>
                             </div>
                         </div>
                                     ';

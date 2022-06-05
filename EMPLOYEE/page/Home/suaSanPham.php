@@ -138,7 +138,7 @@ if ($result->num_rows > 0) {
                 <?php include '../../component/Home/header.php' ?>
             </div>
             <div id="box-add">
-                <h1 class="txt-header">SỬA THÔNG TIN SẢN PHẨM</h1>
+                <h1 class="txt-header">SỬA THÔNG TIN SẢN PHẨM </h1>
                 <form action="xuLySuaSanPham.php" method="post">
                     <div class="box-form">
                         <input type="text" name="txtMaSP" id="" class="input-box none" value="<?php echo $Ma_SP ?>">

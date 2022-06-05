@@ -45,7 +45,7 @@
 											<td >'.$row['Ten_KH'].'</td>
 											<td>'.$row['Ma_NV'].'</td>
 											<td >'.$row['Ngay_Ban_Hang'].'</td>
-											<td ><a href="detailed_history.php"><button class="btnChiTiet select">Xem</button></a></td>
+											<td ><a href="http://localhost:81/PharmacyManager/EMPLOYEE/page/history/detailed_history.php/?Ma_HD=' . $row['Ma_Hoa_Don'] . '"><button class="btnChiTiet select">Xem</button></a></td>
 										</tr>
 										';
 									}
