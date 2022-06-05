@@ -170,7 +170,7 @@ if ($result->num_rows > 0) {
                     <?php
                     echo '
                     <div class="click-group rowItem">
-                        <button class="btn btn-return"> <a href="http://localhost/PharmacyManager/ADMIN/page/NhaCungCap/ChiTiet.php?Ma_NCC='.$Ma_NCC.'">Trở về </a></button>
+                        <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhaCungCap/ChiTiet.php?Ma_NCC='.$Ma_NCC.'">Trở về </a></button>
                         <button type="submit" name="updateNCC" class="btn btn-submit">Sửa sản phẩm</button>
                     </div>
                     ';

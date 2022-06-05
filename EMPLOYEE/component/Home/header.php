@@ -55,14 +55,14 @@
         $username = $_SESSION['username'];
         $password = $_SESSION['password'];
 
-        $sql = "SELECT * FROM `admin` WHERE TaiKhoan = '$username' && MatKhau = '$password'";
+        $sql = "SELECT * FROM `nhan_vien` WHERE Ten_Dang_Nhap = '$username' && Mat_Khau = '$password'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo '
                 <div class="row user">
-                    <a href=""><img src="http://localhost/PharmacyManager/assets/anh/user.png" alt=""></a>
-                    <p class="logout"><a class="link-top" href="http://localhost/PharmacyManager/ADMIN/Login/index.php">Đăng xuất</a></p>
+                    <a href=""><img src="../../../assets/anh/user.png" alt=""></a>
+                    <p class="logout"><a class="link-top" href="../../../EMPLOYEE/page/Login/index.php">Đăng xuất</a></p>
                 </div> 
                 ';
             }

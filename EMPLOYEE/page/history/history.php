@@ -9,8 +9,8 @@
 
 <body>
 	<div class="row">
-		<div class = "main_left">
-			<?php include '../../component/Home/menuLeft.php' ?>
+	<div class = "main_left">
+			<?php include '../../component/Home/MenuLeft/ML_LichSuBan.php' ?>
 		</div>
 
 		<div class="main_right">
@@ -29,7 +29,6 @@
 									<th>khách hàng</th>
 									<th>nhân Viên</th>
 									<th>ngày bán</th>
-									<th>trạng thái</th>
 									<th>Chi tiết</th>
 							</tr>
 						</thead>
@@ -46,8 +45,7 @@
 											<td >'.$row['Ten_KH'].'</td>
 											<td>'.$row['Ma_NV'].'</td>
 											<td >'.$row['Ngay_Ban_Hang'].'</td>
-											<td >'.$row['Trang_Thai_Thanh_Toan'].'</td>
-											<td ><a href="detailed_history.php"><button class="btnChiTiet select">Xem</button></a></td>
+											<td ><a href="http://localhost:81/PharmacyManager/EMPLOYEE/page/history/detailed_history.php/?Ma_HD=' . $row['Ma_Hoa_Don'] . '"><button class="btnChiTiet select">Xem</button></a></td>
 										</tr>
 										';
 									}

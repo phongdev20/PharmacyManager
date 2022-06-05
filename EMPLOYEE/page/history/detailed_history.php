@@ -45,7 +45,6 @@
 
         .item {
             font-weight: bold;
-            margin-bottom: 8px;
         }
 
         .return {
@@ -114,44 +113,39 @@
 
 <body>
     <div class="row">
-        <div>
-            <?php include '../../component/Home/menuLeft/ML_NhanVien.php' ?>>
-        </div>
-
-        <div style="min-height: 100vh; margin-left: 300px;">
+        <div class = "main_left">
+        <?php include '../../component/Home/MenuLeft/ML_LichSuBan.php' ?>
+		</div>
+        <div style="min-height: 100vh;">
             <div>
                 <?php include '../../component/Home/header.php' ?>
             </div>
             <div style="margin-top: 20px;">
+						<h1 class="txt-center">Chi tiết Hóa Đơn </h1>
                 <?php
-                $Ma_NV = $_GET['Ma_NV'];
-
+                $Ma_SP = $_GET['Ma_HD'];
                 $conn = new mysqli('localhost', 'root', '', 'quanlykhothuoc');
-                $sql = "SELECT * FROM `nhan_vien` JOIN chuc_vu ON nhan_vien.Ma_Chuc = chuc_vu.Ma_Chuc WHERE `Ma_NV` = '$Ma_NV'";
+                $sql = "SELECT * FROM `Chi_Tiet_Hoa_Don`  INNER JOIN san_pham on san_pham.Ma_SP = Chi_Tiet_Hoa_Don.Ma_SP WHERE Ma_Hoa_Don='$Ma_SP'";
                 $result = $conn->query($sql);
-                if ($result) {
+                if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
                         echo
                         '
                         <div>
-                            <h1 class="txt-center">Chi tiết về ' . $row['Ten_NV'] . '</h1>
-                            <div>
+                            
+                            <div class="row">
                                 <div class="detail">
-                                    <span class="item">Ngày sinh: </span><span>' . $row['Ngay_Sinh'] . '</span><br />
-                                    <span class="item">Giới tính: </span><span>' . $row['Gioi_Tinh'] . '</span><br />
-                                    <span class="item">Địa chỉ: </span><span>' . $row['Dia_Chi'] . '</span><br />
-                                    <span class="item">Ngày bắt đầu làm: </span><span>' . $row['Ngay_vao_Lam'] . '</span><br />
-                                    <span class="item">Tên đăng nhập: </span><span>' . $row['Ten_Dang_Nhap'] . '</span><br />
-                                    <span class="item">Mật khẩu: </span><span>' . $row['Mat_Khau'] . '</span><br />
-                                    <span class="item">Chức vụ: </span><span>' . $row['Ten_Chuc'] . '</span><br />
-                                    <span class="item">Công việc: </span><span>' . $row['Cong_Viec'] . '</span><br />
-                                    <span class="item">Lương cứng: </span><span>' . $row['Luong'] . ' VNĐ</span><br />
+                                    <span class="item">Mã hóa đơn :</span><span>' . $row['Ma_CTHD'] . '</span><br />  
+																		<span class="item">Tên sản phẩm: </span><span>' . $row['Ten_SP'] . '</span><br />
+                                    <span class="item">Số Lượng : </span><span>' . $row['So_Luong'] . '</span><br />
+                                    <span class="item">giá: </span><span>' . $row['Gia'] . ' VNĐ </span><br />
+                              
+                                    
                                 </div>
                             </div>
                             
                             <div class="click-group rowItem">
-                                <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhanVien/NhanVien.php">Trở về </a></button>
-                                <button class="btn btn-return"> <a href="http://localhost:81/PharmacyManager/ADMIN/page/NhanVien/suaNV.php?Ma_NV=' . $Ma_NV . '">Sửa thông tin</a></button>
+                                <button class="btn btn-return"> <a href="../../history/history.php">Trở về </a></button>
                             </div>
                         </div>
                                     ';
@@ -159,7 +153,7 @@
                 }
                 $conn->close();
                 ?>
-
+                
             </div>
         </div>
     </div>
