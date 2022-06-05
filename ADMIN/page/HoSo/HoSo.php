@@ -81,7 +81,7 @@
         
                                 <tr>
                                     <td colspan="2" class="txt-center">
-                                        <a href="">Đổi mật khẩu</a>
+                                        <a href="./DoiMatKhau.php?TK='.$row['TaiKhoan'].'">Đổi mật khẩu</a>
                                     </td>
                                 </tr>       
                                 ';

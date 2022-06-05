@@ -112,7 +112,7 @@ if (session_id() === '') {
                 <a class="link" href="LichSuNhapKho.php">Hóa đơn nhập</a>
             </div>
             <div class="box-item">
-                <a class="link" href="HoSoCaNhan.php" >Hóa đơn bán</a>
+                <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/HoaDonBan/HoaDonBan.php" >Hóa đơn bán</a>
             </div>
             <div class="box-item">
                 <a class="link" href="http://localhost/PharmacyManager/ADMIN/page/HoSo/HoSo.php">Hồ sơ cá nhân</a>
